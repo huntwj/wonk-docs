@@ -56,66 +56,88 @@
 	</script></sl-sidebar-state-persist><div class="md:sl-hidden"><div class="mobile-preferences sl-flex" data-astro-cid-p4azlveh><div class="social-icons" data-astro-cid-p4azlveh></div><starlight-theme-select data-astro-cid-smhvfpqh="true"><label style="--sl-select-width: 6.25em" data-astro-cid-2z5xp7gb><span class="sr-only" data-astro-cid-2z5xp7gb>Select theme</span><span class="icon label-icon" data-astro-cid-2z5xp7gb><svg class="sl-theme-icon-dark" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg class="sl-theme-icon-light" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg class="sl-theme-icon-auto" data-astro-cid-smhvfpqh="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></span><select autocomplete="off" data-astro-cid-2z5xp7gb><option value="dark" data-astro-cid-2z5xp7gb>Dark</option><option value="light" data-astro-cid-2z5xp7gb>Light</option><option value="auto" selected data-astro-cid-2z5xp7gb>Auto</option></select><svg class="icon caret" data-astro-cid-2z5xp7gb="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-cid-hkc32dio><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>(() => {
 		const theme = (typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme'));
 		if (theme) document.querySelectorAll('starlight-theme-select select').forEach((s) => { s.value = theme; });
-	})();</script></div></div></div></sl-sidebar-pane></nav><div class="main-frame" data-astro-cid-yntsjkba><script type="module">var e=document.getElementById(`starlight__sidebar`),t=e?.querySelector(`sl-sidebar-state-persist`),n=`sl-sidebar-state`,r=()=>{let r=[],i=t?.dataset.hash||``;try{let e=sessionStorage.getItem(n),t=JSON.parse(e||`{}`);Array.isArray(t.open)&&t.hash===i&&(r=t.open)}catch{}return{hash:i,open:r,scroll:e?.scrollTop||0}},i=e=>{try{sessionStorage.setItem(n,JSON.stringify(e))}catch{}},a=()=>i(r()),o=(e,t)=>{let n=r();n.open[t]=e,i(n)};t?.addEventListener(`click`,e=>{if(!(e.target instanceof Element))return;let t=e.target.closest(`summary`)?.closest(`details`);if(!t)return;let n=t.querySelector(`sl-sidebar-restore`),r=parseInt(n?.dataset.index||``);isNaN(r)||o(!t.open,r)}),addEventListener(`visibilitychange`,()=>{document.visibilityState===`hidden`&&a()});</script><div class="lg:sl-flex" data-astro-cid-lrzkfocr><aside class="right-sidebar-container print:hidden" data-astro-cid-lrzkfocr><div class="right-sidebar" data-astro-cid-lrzkfocr><div class="lg:sl-hidden" data-astro-cid-qok35upx><mobile-starlight-toc data-min-h="2" data-max-h="3" data-astro-cid-66cqc7ze="true"><nav aria-labelledby="starlight__on-this-page--mobile" data-astro-cid-66cqc7ze><details id="starlight__mobile-toc" data-astro-cid-66cqc7ze><summary id="starlight__on-this-page--mobile" class="sl-flex" data-astro-cid-66cqc7ze><span class="toggle sl-flex" data-astro-cid-66cqc7ze>On this page<svg class="caret" data-astro-cid-66cqc7ze="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;" data-astro-cid-hkc32dio><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current" data-astro-cid-66cqc7ze></span></summary><div class="dropdown" data-astro-cid-66cqc7ze><ul class="isMobile" style="--depth: 0;" data-astro-cid-jugkfwgx><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#_top" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Overview</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-settings-window" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The settings window</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-minimap-button" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The minimap button</span></a></li></ul></div></details></nav></mobile-starlight-toc><script type="module" src="/wonk-docs/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C3fM4Kra.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block" data-astro-cid-qok35upx><div class="sl-container" data-astro-cid-qok35upx><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul style="--depth: 0;" data-astro-cid-jugkfwgx><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#_top" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Overview</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-settings-window" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The settings window</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-minimap-button" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The minimap button</span></a></li></ul></nav></starlight-toc><script type="module" src="/wonk-docs/_astro/TableOfContents.astro_astro_type_script_index_0_lang.BpJaGz7G.js"></script></div></div></div></aside><div class="main-pane" data-astro-cid-lrzkfocr><main data-pagefind-body lang="en" dir="ltr" data-astro-cid-g5ptsecz><div class="content-panel" data-astro-cid-a7po4psb><div class="sl-container" data-astro-cid-a7po4psb><h1 id="_top" data-astro-cid-bebwqqxs>Settings and the minimap button</h1></div></div><div class="content-panel" data-astro-cid-a7po4psb><div class="sl-container" data-astro-cid-a7po4psb><div class="sl-markdown-content"><div class="sl-heading-wrapper level-h2"><h2 id="the-settings-window">The settings window</h2><a class="sl-anchor-link" href="#the-settings-window"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “The settings window”</span></a></div>
-<p>Open it with <code dir="auto">/wonk plan options</code> (or <code dir="auto">/wonk plan settings</code>), or from the minimap button’s menu. Every control does the same as its command (<a href="/wonk-docs/plan/reference/commands/">Commands</a>).</p>
-<p>Each setting has two values:</p>
+	})();</script></div></div></div></sl-sidebar-pane></nav><div class="main-frame" data-astro-cid-yntsjkba><script type="module">var e=document.getElementById(`starlight__sidebar`),t=e?.querySelector(`sl-sidebar-state-persist`),n=`sl-sidebar-state`,r=()=>{let r=[],i=t?.dataset.hash||``;try{let e=sessionStorage.getItem(n),t=JSON.parse(e||`{}`);Array.isArray(t.open)&&t.hash===i&&(r=t.open)}catch{}return{hash:i,open:r,scroll:e?.scrollTop||0}},i=e=>{try{sessionStorage.setItem(n,JSON.stringify(e))}catch{}},a=()=>i(r()),o=(e,t)=>{let n=r();n.open[t]=e,i(n)};t?.addEventListener(`click`,e=>{if(!(e.target instanceof Element))return;let t=e.target.closest(`summary`)?.closest(`details`);if(!t)return;let n=t.querySelector(`sl-sidebar-restore`),r=parseInt(n?.dataset.index||``);isNaN(r)||o(!t.open,r)}),addEventListener(`visibilitychange`,()=>{document.visibilityState===`hidden`&&a()});</script><div class="lg:sl-flex" data-astro-cid-lrzkfocr><aside class="right-sidebar-container print:hidden" data-astro-cid-lrzkfocr><div class="right-sidebar" data-astro-cid-lrzkfocr><div class="lg:sl-hidden" data-astro-cid-qok35upx><mobile-starlight-toc data-min-h="2" data-max-h="3" data-astro-cid-66cqc7ze="true"><nav aria-labelledby="starlight__on-this-page--mobile" data-astro-cid-66cqc7ze><details id="starlight__mobile-toc" data-astro-cid-66cqc7ze><summary id="starlight__on-this-page--mobile" class="sl-flex" data-astro-cid-66cqc7ze><span class="toggle sl-flex" data-astro-cid-66cqc7ze>On this page<svg class="caret" data-astro-cid-66cqc7ze="true" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;" data-astro-cid-hkc32dio><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current" data-astro-cid-66cqc7ze></span></summary><div class="dropdown" data-astro-cid-66cqc7ze><ul class="isMobile" style="--depth: 0;" data-astro-cid-jugkfwgx><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#_top" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Overview</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-settings-window" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The settings window</span></a><ul class="isMobile" style="--depth: 1;" data-astro-cid-jugkfwgx><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#tabs-all-characters-this-one-its-class" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Tabs: all characters, this one, its class</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#the-rows" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>The rows</span></a></li></ul></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-minimap-button" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The minimap button</span></a></li></ul></div></details></nav></mobile-starlight-toc><script type="module" src="/wonk-docs/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C3fM4Kra.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block" data-astro-cid-qok35upx><div class="sl-container" data-astro-cid-qok35upx><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul style="--depth: 0;" data-astro-cid-jugkfwgx><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#_top" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>Overview</span></a></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-settings-window" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The settings window</span></a><ul style="--depth: 1;" data-astro-cid-jugkfwgx><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#tabs-all-characters-this-one-its-class" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>Tabs: all characters, this one, its class</span></a></li><li style="--depth: 1;" data-astro-cid-jugkfwgx><a href="#the-rows" style="--depth: 1;" data-astro-cid-jugkfwgx><span style="--depth: 1;" data-astro-cid-jugkfwgx>The rows</span></a></li></ul></li><li style="--depth: 0;" data-astro-cid-jugkfwgx><a href="#the-minimap-button" style="--depth: 0;" data-astro-cid-jugkfwgx><span style="--depth: 0;" data-astro-cid-jugkfwgx>The minimap button</span></a></li></ul></nav></starlight-toc><script type="module" src="/wonk-docs/_astro/TableOfContents.astro_astro_type_script_index_0_lang.BpJaGz7G.js"></script></div></div></div></aside><div class="main-pane" data-astro-cid-lrzkfocr><main data-pagefind-body lang="en" dir="ltr" data-astro-cid-g5ptsecz><div class="content-panel" data-astro-cid-a7po4psb><div class="sl-container" data-astro-cid-a7po4psb><h1 id="_top" data-astro-cid-bebwqqxs>Settings and the minimap button</h1></div></div><div class="content-panel" data-astro-cid-a7po4psb><div class="sl-container" data-astro-cid-a7po4psb><div class="sl-markdown-content"><div class="sl-heading-wrapper level-h2"><h2 id="the-settings-window">The settings window</h2><a class="sl-anchor-link" href="#the-settings-window"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “The settings window”</span></a></div>
+<p>Open it with <code dir="auto">/wonk plan options</code> (or <code dir="auto">/wonk plan settings</code>), or from the minimap button’s menu. Every row does
+the same as its command (<a href="/wonk-docs/plan/reference/commands/">Commands</a>), and a change applies at once: no reload.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="tabs-all-characters-this-one-its-class">Tabs: all characters, this one, its class</h3><a class="sl-anchor-link" href="#tabs-all-characters-this-one-its-class"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Tabs: all characters, this one, its class”</span></a></div>
+<p>The window has tabs, like the game’s macro window:</p>
 <ul>
-<li><strong>This character:</strong> what this character uses. Each character keeps its own.</li>
-<li><strong>New characters:</strong> what a character you haven’t played with PlanWonk yet starts with. Changing it
-never changes this character.</li>
-<li><strong>Use for all:</strong> this character’s value for every one of your characters, and for new ones, in one click.</li>
+<li><strong>All characters:</strong> the value every character uses unless it has its own. A new character follows it.</li>
+<li><strong>The character’s name:</strong> this character’s own values.</li>
+<li><strong>Its class</strong> (for example <strong>Druids</strong>): a value for every character of the class. It beats all characters’
+value, and a character’s own beats both.</li>
 </ul>
-<p>A setting shared by the whole account says <strong>All characters</strong> instead (learning how often chat asks for a
-group: the counts are the account’s). One that means something only on this character, such as its gear
-roles and talent spec, says <strong>This character only</strong>.</p>
-<p>After the update that added the two values, every character kept its own settings, and the default for new
-characters is what the first character you logged in with had.</p>
+<p>A change goes to the tab that’s open. Each row shows one value and where it comes from:</p>
+<ul>
+<li>On a character’s or class tab, a row it doesn’t set says where its value comes from (<em>from all your
+characters</em>), with <strong>Use your own</strong>. A row set there has <strong>Use the shared value</strong>.</li>
+<li>On <strong>All characters</strong>, a row that some characters set for themselves says how many (<em>2 set their own</em>), with
+<strong>Change them too</strong>: that value for all of them.</li>
+<li>Hovering a value shows every level’s value, the one in use first.</li>
+<li><strong>Set per character or faction</strong> lists every value set below all characters, each with <strong>Use the shared
+value</strong>, and <strong>Clear all for this character</strong>.</li>
+</ul>
+<p>A window setting (where the window opens, the arrow, the bag icons) is all characters’ or a character’s own,
+never a class’s. Learning how often chat asks for a group is the account’s: it shows on <strong>All characters</strong>
+only. A character’s talent spec, gear roles and test run are its own: they show on its tab only.</p>
+<p>After the update that added the tabs, every character kept every value it had. A value that was the same as the
+old default for new characters now follows <strong>All characters</strong>; a value that differed is the character’s own.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="the-rows">The rows</h3><a class="sl-anchor-link" href="#the-rows"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “The rows”</span></a></div>
 <table>
 <thead>
 <tr>
 <th>Section</th>
-<th>Controls</th>
+<th>Rows</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Plan</strong></td>
-<td>Use the auction house; Farm instead of buying (Less, Normal, More); Quest route; Plan this character on its own (off by default: alts send nothing, craft nothing for it, and fund nothing; they can still use what it has); Plan Tailoring and Enchanting together; Route quality (Off, Low, Medium, High), and in combat and when idle; Plan crafts that upgrade your gear; Gear upgrades: minutes per 1% better; Travel: death skips (not built yet); Accept and hand in the plan’s quests (on by default; Shift as a quest window opens skips it once; to check in game); Share recipes with your party when it forms (off by default; two players only)</td>
+<td><strong>Playing</strong></td>
+<td>Use the auction house; Plan this character on its own (No by default: alts send nothing, craft nothing for it, and fund nothing; they can still use what it has); Accept and hand in the plan’s quests (Yes by default; Shift as a quest window opens skips it once; to check in game); Use my hearthstone (When it saves time, Only to go home, Never); Route risk (Careful, Normal, Bold)</td>
 </tr>
 <tr>
-<td><strong>Bags</strong></td>
-<td>Best-action icons on bag items (on by default; to check in game)</td>
+<td><strong>Crafting and farming</strong></td>
+<td>Farm instead of buying (Less, Normal, More); Craft between farms (When it saves time, Always, No); In town before a farm (Errands first, Errands after)</td>
 </tr>
 <tr>
-<td><strong>Tracker</strong></td>
-<td>View (Guide, Plan); Start in (Guide, Plan: the view the window opens in when you log in; Guide by default); Route steps held still in the Plan view; Height before it scrolls; Lock in place; “As you go” in full</td>
-</tr>
-<tr>
-<td><strong>Guide</strong></td>
-<td>Goals named, the current one too (2 by default: the current goal, then one on the <em>then:</em> line); Show hints in the Guide (on by default); Show why on each card; Change what I’m doing only if the route improves by at least …; Change what’s next on screen only if it improves by at least … (Default, 30 s to 10 min, or Never until done)</td>
-</tr>
-<tr>
-<td><strong>Learning</strong></td>
-<td>Learn vendor discounts from the prices shown; Learn how many a vendor has of a limited item; Learn the flight points you know; Learn which quests a giver didn’t offer you; Learn what your play brings in an hour; Learn how often chat asks for a group (all characters)</td>
-</tr>
-<tr>
-<td><strong>Nearby</strong></td>
-<td>A click on a name sends the group ask (off by default: it opens it to edit)</td>
-</tr>
-<tr>
-<td><strong>Arrow</strong></td>
-<td>Show the arrow; Drawn by (Auto, PlanWonk, TomTom); Size; Pin on the minimap; Lock in place</td>
-</tr>
-<tr>
-<td><strong>Gear</strong> (classes with more than one gear role)</td>
-<td>Primary gear role: questing and grinding; then, for each of your class’s roles, <strong>&lt;Role&gt; gear role: its own set, kept, upgrades for it</strong> (for example <strong>Healing gear role</strong>)</td>
-</tr>
-<tr>
-<td><strong>Talents</strong></td>
-<td>Talent spec: what the talent plan builds toward (Auto: the tree your points are in, or a spec); Suggest talent resets (<a href="/wonk-docs/plan/how-to/talents/">Spend your talent points</a>)</td>
+<td><strong>Window</strong></td>
+<td>Start in (Guide, Plan: the view the window opens in when you log in; Guide by default); Show the arrow; Icons on bag items (Yes by default; to check in game)</td>
 </tr>
 </tbody>
 </table>
+<p>The rest are under <strong>More settings</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plan details</strong></td>
+<td>Plan a quest route; Plan Tailoring and Enchanting together; Plan crafts that upgrade your gear; Minutes 1% better gear is worth; Share recipes with my party (No by default; two players only); Suggest talent resets; on a character’s tab, its Talent spec (Auto: the tree your points are in, or a spec), and for a class with more than one gear role its Gear role and, for each role, <strong>&lt;Role&gt; gear too</strong> (its own set, kept, upgrades for it)</td>
+</tr>
+<tr>
+<td><strong>Guide window</strong></td>
+<td>Goals named on the card (2 by default: the current goal, then one on the <em>then:</em> line); “As you go” lists (What to do, Every item); Hints in the Guide (Yes by default); Why on each card; Height before it scrolls; Lock the window; Pin on the minimap; Arrow drawn by (Auto, PlanWonk, TomTom); Arrow size; Lock the arrow</td>
+</tr>
+<tr>
+<td><strong>Learning</strong></td>
+<td>Learn vendor discounts; Learn a vendor’s limited stock; Learn the flight points you know; Learn quests a giver didn’t offer; Learn what your play brings in; Learn how often chat asks for a group (all characters); A click on a name sends the ask (No by default: it opens the ask to edit)</td>
+</tr>
+<tr>
+<td><strong>Test run</strong> (a character’s tab)</td>
+<td>Hold my time estimates; End at level (0: when you end it)</td>
+</tr>
+<tr>
+<td><strong>Performance and stability</strong></td>
+<td>How hard to search for a better route (Off, Low, Medium, High), then in combat and when idle; Keep my current step unless a new one saves …; Keep what’s next unless a new order saves … (Default, 30 seconds to 10 minutes, or Never until done); Steps held still in the Plan view; Farm length to rank farms for (minutes)</td>
+</tr>
+</tbody>
+</table>
+<p>Death skips have no row until they’re built; <code dir="auto">/wonk plan plan travel deathskips</code> still sets the value, which the
+plan doesn’t use yet.</p>
 <p>Its <strong>Goals</strong> button opens the Goals page (<code dir="auto">/wonk plan goals</code>): professions in or out of the plan, their
 targets, professions planned for later, and your goals (the button: to check in game).</p>
 <div class="sl-heading-wrapper level-h2"><h2 id="the-minimap-button">The minimap button</h2><a class="sl-anchor-link" href="#the-minimap-button"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “The minimap button”</span></a></div>
