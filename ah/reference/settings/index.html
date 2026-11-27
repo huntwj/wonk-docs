@@ -117,17 +117,19 @@ them all with what each means. The three money settings (<code dir="auto">dealMi
 </tbody>
 </table>
 <p>A true-or-false setting takes <code dir="auto">true</code> or <code dir="auto">false</code> (<code dir="auto">on</code> and <code dir="auto">off</code> work too).</p>
-<p><strong>Each character’s own.</strong> Every setting above except <code dir="auto">shoppingPer</code> is kept per character, and so are
-whether the panel and the scan strip are shown. In the settings window (<code dir="auto">/fmarket settings</code>):</p>
+<p><strong>All characters, or this one.</strong> The settings window (<code dir="auto">/fmarket settings</code>) has tabs, as the game’s macro window
+does:</p>
 <ul>
-<li><strong>This character</strong> is the box or button you change.</li>
-<li><strong>New characters</strong> is what a character you make next starts with. Click it to use this character’s value there.</li>
-<li><strong>Use for all</strong> gives this character’s value to every character and to new ones. Your other characters take it
-the next time they log in.</li>
+<li><strong>All characters:</strong> the value your characters share. A change here reaches every character that hasn’t set its
+own. A row says how many have their own, and <strong>Change them too</strong> gives them the shared value.</li>
+<li><strong>This character</strong> (its name): a dimmed row uses the shared value. <strong>Use your own</strong> gives this character its own,
+to change; <strong>Use the shared value</strong> goes back.</li>
+<li><strong>Your Alliance or Horde characters:</strong> a third tab, shown once you play both factions, since their markets
+differ. A value here is for that faction’s characters.</li>
 </ul>
-<p><code dir="auto">shoppingPer</code> is the account’s and says <strong>All characters</strong>. <code dir="auto">/fmarket set</code> changes this character’s value. The
-first time you log in after this change, the values you had become every character’s and the default, so
-nothing changes until you change it.</p>
+<p>The four settings you’d change most come first; <strong>More settings</strong> opens the rest. <code dir="auto">shoppingPer</code> is the same for
+all your characters, and the chat rows, the panel and the strip have no faction tab. <code dir="auto">/fmarket set</code> changes this
+character’s value, and <code dir="auto">/fmarket set &lt;name&gt; default</code> clears it, so it uses the shared one again.</p>
 <div class="sl-heading-wrapper level-h2"><h2 id="forevermarketdata">ForeverMarketData</h2><a class="sl-anchor-link" href="#forevermarketdata"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “ForeverMarketData”</span></a></div>
 <p>These size what ForeverMarketData keeps in the game’s saved file. The defaults are measured to keep the file
 quick to load; change them only to troubleshoot. <code dir="auto">/fmd set</code> lists them, <code dir="auto">/fmd set &lt;name&gt; &lt;number&gt;</code> changes one,
